@@ -1,0 +1,322 @@
+/* =====================================================================
+   SparkleClean Services  --  circa 2004 style sheet
+   Fixed-width, table-based layout. System fonts. Muted colors.
+   No rounded corners, no drop shadows, small dense text, beveled
+   buttons. Built to look like a common early-2000s small-business site.
+   ===================================================================== */
+
+body {
+  background: #7d8c99;            /* muted steel-gray desktop background */
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13px;
+  color: #000000;
+  margin: 0;
+  padding: 14px 0;
+  text-align: center;            /* centers the page box in old browsers */
+}
+
+/* The whole site sits in one fixed-width box */
+.page {
+  width: 760px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 2px solid #000033;
+  text-align: left;
+}
+
+a { color: #0000cc; }
+a:visited { color: #660099; }
+a:hover { color: #cc0000; }
+
+img { border: 0; }
+
+hr {
+  height: 1px;
+  color: #99a3ad;
+  background-color: #99a3ad;
+  border: 0;
+  margin: 8px 0;
+}
+
+p { margin: 6px 0; line-height: 1.35; }
+
+/* ---------- Header banner ---------- */
+table.header {
+  width: 100%;
+  border-collapse: collapse;
+  background: #000066;
+  background-image: linear-gradient(#000088, #000044);
+}
+table.header td { padding: 6px 8px; vertical-align: middle; }
+.logo-cell { width: 90px; text-align: center; }
+.logo-cell img { width: 74px; height: auto; border: 2px solid #ffffff; background: #fff; }
+.title-cell h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffcc00;
+  margin: 0;
+  letter-spacing: -1px;
+}
+.title-cell .tagline {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-style: italic;
+  color: #ffffff;
+}
+.header-contact {
+  text-align: right;
+  width: 170px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #ffffff;
+}
+.header-contact b { font-size: 16px; color: #ffcc00; }
+
+/* ---------- Nav bar (beveled gray) ---------- */
+.navbar {
+  background: #cccccc;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #808080;
+  padding: 4px 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #333333;
+}
+.navbar a {
+  color: #000066;
+  text-decoration: none;
+  padding: 0 5px;
+}
+.navbar a:hover { color: #cc0000; text-decoration: underline; }
+
+/* ---------- Marquee / announcement strip ---------- */
+.announce {
+  background: #ffffcc;
+  color: #cc0000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  border-bottom: 1px solid #999999;
+  padding: 3px 0;
+}
+
+/* ---------- Main two-column table ---------- */
+table.main { width: 760px; border-collapse: collapse; table-layout: fixed; }
+table.main > tbody > tr > td { vertical-align: top; }
+
+.sidebar {
+  width: 172px;
+  background: #eef0f2;
+  border-right: 1px solid #99a3ad;
+  padding: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #222222;
+}
+.content {
+  padding: 10px 14px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13px;
+}
+
+/* ---------- Sidebar boxes ---------- */
+.box {
+  border: 1px solid #99a3ad;
+  background: #ffffff;
+  margin-bottom: 12px;
+}
+.box-title {
+  background: #000066;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 11px;
+  padding: 3px 6px;
+}
+.box-body { padding: 6px 8px; }
+.box-body ul { margin: 0; padding-left: 15px; }
+.box-body li { margin: 3px 0; }
+.sidebar a { color: #0000cc; text-decoration: underline; }
+
+/* Beveled button */
+.btn2000 {
+  display: block;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000000 !important;
+  text-decoration: none !important;
+  background: #dcdcdc;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+  padding: 6px 4px;
+  margin: 8px 0;
+}
+.btn2000:hover { background: #e8e8e8; color: #cc0000 !important; }
+.btn2000:active {
+  border-top: 2px solid #808080;
+  border-left: 2px solid #808080;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.sidebar .clipart { text-align: center; margin: 8px 0; }
+.sidebar .clipart img { width: 150px; height: auto; border: 1px solid #99a3ad; }
+
+/* Hit counter */
+.hitcounter {
+  font-family: "Courier New", Courier, monospace;
+  background: #000000;
+  color: #33ff33;
+  letter-spacing: 2px;
+  padding: 2px 4px;
+  border: 1px solid #333333;
+}
+
+.paycards { font-size: 10px; color: #555555; }
+
+/* ---------- Content headings ---------- */
+.content h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #990000;
+  margin: 12px 0 4px;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 2px;
+}
+.content h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #000066;
+  margin: 8px 0 2px;
+}
+.welcome-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #000066;
+  margin: 4px 0 6px;
+}
+
+/* ---------- Images in content (big + bordered) ---------- */
+img.photo {
+  border: 3px double #000066;
+  padding: 2px;
+  background: #ffffff;
+}
+img.imgright { float: right; margin: 2px 0 8px 12px; }
+img.imgleft  { float: left;  margin: 2px 12px 8px 0; }
+.banner-photo { width: 100%; margin: 4px 0; }
+.banner-photo img { width: 100%; height: auto; display: block; border: 3px double #000066; }
+
+/* ---------- Services table ---------- */
+table.services {
+  border: 2px solid #000066;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 8px 0;
+  font-size: 12px;
+}
+table.services th {
+  background: #000066;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 4px 6px;
+  text-align: left;
+}
+table.services td { border: 1px solid #99a3ad; padding: 5px 6px; vertical-align: top; }
+table.services tr.alt td { background: #eef0f2; }
+table.services td.svc { font-weight: bold; color: #000066; width: 150px; white-space: nowrap; }
+
+/* ---------- Bulleted why-list ---------- */
+ul.checks { margin: 6px 0; padding-left: 18px; font-size: 13px; }
+ul.checks li { margin: 3px 0; }
+
+/* ---------- Gallery table ---------- */
+table.gallery { border-collapse: collapse; margin: 8px auto; }
+table.gallery td { padding: 6px; text-align: center; }
+table.gallery img { width: 250px; height: 180px; border: 3px double #000066; padding: 2px; background: #fff; }
+table.gallery .cap { font-size: 10px; color: #555555; font-family: Arial, Helvetica, sans-serif; }
+
+/* ---------- Testimonials ---------- */
+.testi {
+  border: 1px solid #99a3ad;
+  background: #ffffee;
+  padding: 8px 10px;
+  margin: 8px 0;
+  font-size: 12px;
+  font-style: italic;
+}
+.testi .stars { color: #ff9900; font-style: normal; font-weight: bold; letter-spacing: 1px; }
+.testi .who { font-style: normal; font-weight: bold; color: #000066; }
+
+/* ---------- Contact form (table layout) ---------- */
+table.formtable { width: 100%; border-collapse: collapse; }
+table.formtable td { padding: 4px 5px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; vertical-align: top; }
+table.formtable td.lbl { width: 120px; font-weight: bold; text-align: right; color: #333333; }
+input.txt, select.txt, textarea.txt {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  border-top: 2px solid #808080;
+  border-left: 2px solid #808080;
+  border-right: 2px solid #dddddd;
+  border-bottom: 2px solid #dddddd;
+  background: #ffffff;
+  padding: 2px 3px;
+  width: 220px;
+}
+textarea.txt { width: 300px; height: 70px; }
+.formbtn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  background: #dcdcdc;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+  padding: 4px 14px;
+  cursor: pointer;
+}
+.formbtn:active {
+  border-top: 2px solid #808080;
+  border-left: 2px solid #808080;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+.required { color: #cc0000; }
+
+/* ---------- Footer ---------- */
+.footer {
+  background: #000066;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  text-align: center;
+  padding: 8px 10px;
+  border-top: 2px solid #ffcc00;
+  line-height: 1.6;
+}
+.footer a { color: #ffcc00; }
+.footer .fnav a { color: #ffcc00; margin: 0 3px; }
+
+/* ---------- Misc dated bits ---------- */
+.small { font-size: 10px; }
+.blink { color: #cc0000; font-weight: bold; animation: blink2000 1s steps(1) infinite; }
+@keyframes blink2000 { 50% { visibility: hidden; } }
+.comic { font-family: "Comic Sans MS", "Comic Sans", cursive; }
+.new-badge {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #cc0000;
+  padding: 0 3px;
+  vertical-align: super;
+}
+.clearfix { clear: both; }
