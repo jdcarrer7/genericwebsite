@@ -131,7 +131,6 @@ img { display: block; max-width: 100%; }
   content: "";
   position: absolute; inset: 0;
   background: url("../assets/images/office-vacuum.jpg") center 30% / cover no-repeat;
-  filter: grayscale(100%) contrast(1.05);
 }
 .hero::after {
   content: "";
