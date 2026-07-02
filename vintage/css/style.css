@@ -6,21 +6,19 @@
    ===================================================================== */
 
 body {
-  background: #7d8c99;            /* muted steel-gray desktop background */
+  background: #ffffff;
   font-family: "Times New Roman", Times, serif;
   font-size: 13px;
   color: #000000;
   margin: 0;
-  padding: 14px 0;
-  text-align: center;            /* centers the page box in old browsers */
+  padding: 0;
 }
 
-/* The whole site sits in one fixed-width box */
+/* Full-width liquid layout - fills the whole screen, no side margins */
 .page {
-  width: 980px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   background: #ffffff;
-  border: 2px solid #000033;
   text-align: left;
 }
 
@@ -104,7 +102,7 @@ table.header td { padding: 6px 8px; vertical-align: middle; }
 }
 
 /* ---------- Main two-column table ---------- */
-table.main { width: 980px; border-collapse: collapse; table-layout: fixed; }
+table.main { width: 100%; border-collapse: collapse; table-layout: fixed; }
 table.main > tbody > tr > td { vertical-align: top; }
 
 .sidebar {
@@ -238,8 +236,8 @@ ul.checks { margin: 6px 0; padding-left: 18px; font-size: 13px; }
 ul.checks li { margin: 3px 0; }
 
 /* ---------- Gallery table ---------- */
-table.gallery { border-collapse: collapse; margin: 8px auto; }
-table.gallery td { padding: 6px; text-align: center; }
+table.gallery { border-collapse: collapse; margin: 8px 0; width: 100%; }
+table.gallery td { padding: 6px; text-align: center; width: 33.33%; }
 table.gallery img { width: 235px; height: 165px; border: 3px double #000066; padding: 2px; background: #fff; }
 table.gallery .cap { font-size: 10px; color: #555555; font-family: Arial, Helvetica, sans-serif; }
 
